@@ -1,0 +1,21 @@
+{
+  "router": {
+    "host": "192.168.0.1",
+    "port": 22,
+    "username": "root",
+    "auth": "password",
+    "sshKey": "~/.ssh/id_ed25519",
+    "knownHosts": "~/.ssh/known_hosts",
+    "connectTimeoutMs": 10000
+  },
+  "github": { "remote": "origin", "branch": "auto", "timeoutMs": 60000 },
+  "domains": { "file": "auto", "autoSync": true, "sort": false },
+  "forkop": {
+    "updateCommand": "auto",
+    "retryCount": 3,
+    "retryDelayMs": 2000,
+    "timeoutMs": 120000,
+    "rawTimeoutMs": 15000,
+    "verifyTimeoutMs": 20000
+  }
+}
